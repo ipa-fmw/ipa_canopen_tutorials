@@ -1,0 +1,15 @@
+<stack>
+  <description brief="ipa_canopen_tutorials">ipa_canopen_tutorials</description>
+  <author>Maintained by Tobias Sing</author>
+  <license>LGPL</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/ipa_canopen_tutorials</url>
+  <depend stack="ipa_canopen" /> <!-- brics_actuator, cob_srvs -->
+  <depend stack="cob_common" /> <!-- brics_actuator, cob_srvs -->
+  <depend stack="cob_extern" /> <!-- libpcan -->
+  <depend stack="common_msgs" /> <!-- sensor_msgs -->
+  <depend stack="pr2_controllers" /> <!-- pr2_controllers_msgs -->
+  <depend stack="ros" />
+  <depend stack="ros_comm" /> <!-- rospy, std_msgs, roscpp -->
+
+</stack>

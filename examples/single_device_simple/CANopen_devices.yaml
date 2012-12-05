@@ -1,0 +1,6 @@
+CANopen:
+  devices:
+    - name: miniarm_1_joint
+      group: miniarm
+      id: 12
+      bus: /dev/pcan32
