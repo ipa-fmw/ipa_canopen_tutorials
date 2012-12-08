@@ -1,0 +1,3 @@
+joint_names: ["mockarm_1_joint"]
+module_ids: [12]
+devices: ["/dev/pcan32"]
