@@ -1,0 +1,6 @@
+<launch>
+<rosparam command="load" ns="canopen" file="$(find ipa_canopen_tutorials)/examples/multiple_devices_simple/CANopen.yaml" />
+<rosparam command="load" ns="tray_controller" file="$(find ipa_canopen_tutorials)/examples/multiple_devices_simple/tray.yaml" />
+<node ns="canopen" name="canopen_ros" pkg="ipa_canopen_ros" type="canopen_ros" />
+<node name="simpleVelCommander" pkg="ipa_canopen_tutorials" type="multiple_devices_simple.py" /> 
+</launch>
