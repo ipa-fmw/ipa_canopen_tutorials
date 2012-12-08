@@ -1,0 +1,22 @@
+<launch>
+
+  <!-- upload robot_description -->
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find ipa_canopen_tutorials)/examples/1dof_simple/urdf/1dof_example.urdf.xacro'" />
+
+  <!-- start robot_state_publisher -->
+  <node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher"/>
+
+  <!-- parameters for CANopen node and description of the CAN modules -->
+  <rosparam command="load" ns="canopen"
+            file="$(find ipa_canopen_tutorials)/examples/1dof_simple/config/CANopen.yaml" />
+  <rosparam command="load"
+            ns="mockarm_controller"
+            file="$(find ipa_canopen_tutorials)/examples/1dof_simple/config/1dof_module.yaml" />
+
+  <!-- This is the CANopen ROS wrapper node -->
+  <node ns="canopen" name="canopen_ros" pkg="ipa_canopen_ros" type="canopen_ros" />
+
+  <!-- The velocity commander sends commands to the trajectory controller -->
+  <node name="velCommander" pkg="ipa_canopen_tutorials" type="1dof_velcommander.py" />
+
+</launch>

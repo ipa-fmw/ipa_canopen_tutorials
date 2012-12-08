@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:xacro="http://ros.org/wiki/xacro">
+
+	<xacro:macro name="modul" params="parent name *origin">
+
+		<joint name="${name}_joint" type="revolute">
+			<insert_block name="origin" />
+			<parent link="${parent}"/>
+			<child link="${name}_link"/>
+			<axis xyz="0 0 1"/>
+			<limit effort="200" velocity="0.6" lower="-0.7854" upper="0.7854"/>
+		</joint>
+
+		<link name="${name}_link">
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                   <box size="0.1 0.02 0.5" />
+                 </geometry>
+			</visual>
+			
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+                   <box size="0.1 0.02 0.5" />
+				</geometry>
+			</collision>
+		</link>
+
+
+	</xacro:macro>
+
+</robot>

@@ -10,17 +10,17 @@ from brics_actuator.msg import JointValue
 rospy.init_node("ipa_canopen_test")
 
 
-rospy.wait_for_service('/miniarm/init')
-initService = rospy.ServiceProxy('/miniarm/init', Trigger)
+rospy.wait_for_service('/mockarm_controller/init')
+initService = rospy.ServiceProxy('/mockarm_controller/init', Trigger)
 resp = initService()
 print resp
 
-velPublisher = rospy.Publisher('/miniarm/command_vel', JointVelocities)
+velPublisher = rospy.Publisher('/mockarm_controller/command_vel', JointVelocities)
 rospy.sleep(2.0)
 v = JointVelocities()
 vv = JointValue()
 vv.timeStamp = rospy.Time.now()
-vv.joint_uri = "miniarm_1_joint"
+vv.joint_uri = "mockarm_1_joint"
 v.velocities = [vv]
 
 while not rospy.is_shutdown():
