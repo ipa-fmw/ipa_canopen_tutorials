@@ -5,21 +5,12 @@
        xmlns:xacro="http://ros.org/wiki/xacro"
        name="3dof_example">
 
-  <include filename="$(find ipa_canopen_tutorials)/examples/3dof_simple/urdf/modul.urdf.xacro" />
+  <include filename="$(find ipa_canopen_tutorials)/examples/1dof_simple/urdf/modul.urdf.xacro" />
 
   <link name="base_link"/>
 
   <xacro:modul name="modul1" parent="base_link">
     <origin xyz="0 0 0.5" rpy="0 0 0" />
   </xacro:modul>
-
-  <xacro:modul name="modul2" parent="modul1_link">
-    <origin xyz="0 0 0.5" rpy="0 0 0" />
-  </xacro:modul>
-
-  <xacro:modul name="modul3" parent="modul2_link">
-    <origin xyz="0 0 0.5" rpy="0 0 0" />
-  </xacro:modul>
-
 
 </robot>
