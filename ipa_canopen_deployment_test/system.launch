@@ -1,0 +1,25 @@
+<launch>
+<!-- protected region additional custom Launchfile statements in the beginning on begin -->
+<!-- protected region additional custom Launchfile statements in the beginning end -->
+  
+
+	<node pkg="ipa_canopen_ros_simple" type="canopen_ros" name="canopen_ros"  ns="torso_controller" output="screen">
+		<remap from="command_vel" to="ffff"/>
+		<param name="can_device" value=""/>
+		<param name="can_baudrate" value="1000"/>
+		<param name="modul_ids" value=""/>
+		<param name="joint_names" value=""/>
+		<param name="robot_description" value=""/>
+	</node>
+	
+	<node pkg="ipa_canopen_deployment_test" type="torso_test" name="torso_test"  output="screen">
+ 		<remap from="command_vel" to="/torso_controller/ffff"/> 
+	</node>
+	
+
+<!-- protected region additional custom Launchfile statements in the end of launch file on begin -->
+<!-- protected region additional custom Launchfile statements in the end of launch file end -->
+
+</launch>
+
+

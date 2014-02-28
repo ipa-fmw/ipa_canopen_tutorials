@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:ros="http://ros/1.0" xmi:id="_KAEK0KBYEeOBN7e_rajcrg" type="RosPackage" name="torso_test.ros_package_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_Ls11sKBYEeOBN7e_rajcrg" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Ls11sqBYEeOBN7e_rajcrg" type="5008"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Ls2cwKBYEeOBN7e_rajcrg" type="7001">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_Ls2cwaBYEeOBN7e_rajcrg" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Ls2cwqBYEeOBN7e_rajcrg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Ls2cw6BYEeOBN7e_rajcrg"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_PF74cKBYEeOBN7e_rajcrg" type="3004">
+      <children xmi:type="notation:DecorationNode" xmi:id="_PF8fgKBYEeOBN7e_rajcrg" type="5004"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_PF74caBYEeOBN7e_rajcrg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_PF74cqBYEeOBN7e_rajcrg" fontName="Ubuntu"/>
+      <element xmi:type="ros:Publisher" href="torso_test.ros_package#//@node.0/@publisher.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PF74c6BYEeOBN7e_rajcrg"/>
+    </children>
+    <element xmi:type="ros:Node" href="torso_test.ros_package#//@node.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ls11saBYEeOBN7e_rajcrg" x="738" y="131"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_KAEK0aBYEeOBN7e_rajcrg"/>
+  <element xmi:type="ros:Package" href="torso_test.ros_package#/"/>
+</notation:Diagram>

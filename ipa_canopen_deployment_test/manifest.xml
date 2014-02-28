@@ -1,0 +1,19 @@
+<package>
+  <description brief="ipa_canopen_deployment_test">Test node for testing ipa_canopen_ros_simple</description>
+  <author>Florian Weisshardt</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url></url>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="rospy"/>
+  <depend package="dynamic_reconfigure"/>
+  	<depend package="brics_actuator"/>
+  	<depend package="ipa_canopen_ros_simple"/>
+  /* protected region additional manifest statements on begin */
+  /* protected region additional manifest statements end */
+  
+  
+</package>
+
+

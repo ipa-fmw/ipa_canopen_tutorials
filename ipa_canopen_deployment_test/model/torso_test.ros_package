@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ros:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ros="http://ros/1.0" name="ipa_canopen_deployment_test" author="Florian Weisshardt" description="Test node for testing ipa_canopen_ros_simple" license="BSD" rosdep="">
+  <node name="torso_test" loopRate="0.2" args="" paramSource="" namespace="">
+    <publisher name="command_vel" msg="brics_actuator::JointVelocities"/>
+  </node>
+  <depend>brics_actuator</depend>
+  <depend>ipa_canopen_ros_simple</depend>
+</ros:Package>

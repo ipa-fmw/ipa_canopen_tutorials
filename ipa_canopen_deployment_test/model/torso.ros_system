@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ros:Architecture xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ros="http://ros/1.0">
+  <topic name="asdasdads">
+    <publisher href="platform:/resource//ipa_canopen_deployment_test/model/torso_test.ros_package#//@node.0/@publisher.0"/>
+    <subscriber href="platform:/resource//ipa_canopen_ros_simple/model/canopen_ros.ros_package#//@node.0/@subscriber.0"/>
+  </topic>
+  <topic name="asdasd">
+    <publisher href="platform:/resource//ipa_canopen_deployment_test/model/torso_test.ros_package#//@node.0/@publisher.0"/>
+    <subscriber href="platform:/resource//ipa_canopen_ros_simple/model/canopen_ros.ros_package#//@node.0/@subscriber.0"/>
+  </topic>
+  <topic name="ffff">
+    <publisher href="platform:/resource//ipa_canopen_deployment_test/model/torso_test.ros_package#//@node.0/@publisher.0"/>
+    <subscriber href="platform:/resource//ipa_canopen_ros_simple/model/canopen_ros.ros_package#//@node.0/@subscriber.0"/>
+  </topic>
+  <packages href="platform:/resource//ipa_canopen_ros_simple/model/canopen_ros.ros_package#/"/>
+  <packages href="platform:/resource//ipa_canopen_deployment_test/model/torso_test.ros_package#/"/>
+</ros:Architecture>

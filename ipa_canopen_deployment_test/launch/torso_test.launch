@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<launch>
+<!-- protected region additional custom Launchfile statements in the beginning on begin -->
+<!-- protected region additional custom Launchfile statements in the beginning end -->
+  
+	<node pkg="ipa_canopen_ros_simple" type="canopen_ros" name="canopen_ros" output="screen">
+      	<!-- parameter description of the CAN modules and for the corresponding trajectory controller -->
+	    <rosparam command="load" file="$(find ipa_canopen_deployment_test)/config/torso.yaml" />
+
+        <!-- upload robot_description -->
+	    <param name="robot_description" command="$(find xacro)/xacro.py '$(find schunk_hardware_config)/lwa4p/urdf/lwa4p.urdf.xacro'" />
+
+		<remap from="command_vel" to="ffff"/>
+	</node>
+	
+	<node pkg="ipa_canopen_deployment_test" type="torso_test" name="torso_test"  output="screen">
+ 		<remap from="command_vel" to="/ffff"/> 
+	</node>
+	
+    <!-- upload robot_description -->
+    <param name="robot_description" command="$(find xacro)/xacro.py '$(find schunk_hardware_config)/lwa4p/urdf/lwa4p.urdf.xacro'" />
+
+	<!-- start robot_state_publisher -->
+	<node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher"/>
+
+<!-- protected region additional custom Launchfile statements in the end of launch file on begin -->
+<!-- protected region additional custom Launchfile statements in the end of launch file end -->
+
+</launch>
+
+
+
