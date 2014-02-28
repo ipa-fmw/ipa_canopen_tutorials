@@ -1,5 +1,5 @@
 <package>
-  <description brief="ipa_canopen_tutorials">
+  <description brief="ipa_canopen_example">
 
      ipa_canopen_tutorials
 
@@ -7,7 +7,7 @@
   <author>tys</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/ipa_canopen_tutorials</url>
+  <url>http://ros.org/wiki/ipa_canopen_example</url>
   <depend package="ipa_canopen_ros"/>
   <depend package="std_msgs"/>
   <depend package="control_msgs"/>
